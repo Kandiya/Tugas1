@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Hello World</title>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="greet">Greet</button>
+    </div>
+
+    <script src="lat2.js"></script>
+    <script>
+       var app = new Vue({
+           el: '#app',
+            data: {
+                name: 'Kandiya'
+            },
+           methods: {
+               greet: function (event) {
+                   alert('Good morning, ' + this.name)
+               }
+
+           }
+       });
+       vm.greet();
+    </script>
+</body>
+</html>
